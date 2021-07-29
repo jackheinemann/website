@@ -1,0 +1,50 @@
+#about-paragraph {
+    font-size: 17px;
+}
+
+.bg-1 {
+    background-color: #009FB7; /* Green */
+    color: #ffffff;
+}
+
+.bg-2 {
+    background-color: #0B3954; /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #EFF1F3; /* White */
+    color: #555555;
+}
+
+.bg-4 {
+    background-color: gray; /* White */
+    color: #ffffff;
+}
+
+.contact-info {
+    color: #ffffff;
+}
+
+.container-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-nav li a:hover {
+    color: #1abc9c !important;
+  }
+
+  #otlet-logo {
+      margin-right: 10px;
+  }
