@@ -1,56 +1,306 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Jack Heinemann</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <title>Jack Heinemann</title>
+  </head>
+  <body>
+      <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="JH" class="rounded-circle logo-dim"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Your Idea</a>
+                </li> -->
+                <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- intro header -->
+    
+    <div class="mt-5 d-flex justify-content-center">
+        <img src="./assets/me.jpg" alt="About Me" class="profile-img rounded-circle shadow">
+    </div>
+    <div class="mt-3 d-flex justify-content-center">
+        <div class="d-flex flex-column justify-content-center">
+            
+            <h1 class="text-center">Jack Heinemann</h1>
+            <h1 class="text-center red">I make software</h1>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-2">
+        <h5 class="text-center w-50">I am a software developer based in New York, NY that specializes in mobile and web developement.</h5>
+    </div>
+    <!-- <div class="d-flex justify-content-center my-2">
+        <button type="button" class="btn bg-red">
+            <h5 class="white">Got an idea?</h5>
         </button>
-        <a class="navbar-brand" href="#">Jack Heinemann</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">About</a></li>
-          <li><a href="#portfolio-items">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> 
-<div class="container-fluid bg-1 text-center">
-  <h3>CLOSED FOR RENOVATIONS</h3>
-  <h4>Be right back</h4>
-</div>
+    </div> -->
+    <div class="divider-gold mt-3 mx-4"></div>
 
-<div class="container-fluid bg-4 text-center" id="contact">
-  <h3>Where To Find Me</h3>
-  <div class="row">
-    <div class="col-sm-4">
-      <h4>Email</h4>
-      <a class='contact-info' href = "mailto: jack@oenoke.com">jack@oenoke.com</a>
-    </div>
-    <div class="col-sm-4">
-      <h4>Phone</h4>
-      <p>+1 (203) 505 9855</p>
-    </div>
-    <div class="col-sm-4">
-      <h4>GitHub</h4>
-      <a class='contact-info' href = "https://github.com/jackheinemann">jackheinemann</a>
-    </div>
-  </div>
-</div>
+    <!-- portfolio -->
 
-</body>
-</html> 
+    <div class="mt-3 d-flex justify-content-center">
+        <h2 class="text-center" id="portfolio">Portfolio</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col p-4">
+                <div class="rounded portfolio-card shadow-lg bg-grey">
+                    <div class="portfolio-card-header d-flex flex-row justify-content-between px-4">
+                        <i id="otletForwardBtn" class="bi bi-arrow-left-square portfolio-arrow my-auto"></i>
+                        <img id="otletShots" src="./assets/projects/otlet1.png" alt="Otlet" height="97%">
+                        <i id="otletBackBtn" class="bi bi-arrow-right-square portfolio-arrow my-auto"></i>
+                    </div>
+                    <div class="portfolio-card-footer bg-white p-4">
+                        <div class="d-flex justify-content-start flex-column">
+                            <div>
+                                <h3>Otlet</h3>
+                                <div class="d-flex justify-content-end flex-row my-1">
+                                    <a href="https://github.com/jackheinemann/otlet">View Github</a>
+                                    <!-- <a href="https://play.google.com/store/apps/details?id=com.heinemann.otlet&hl=en_US&gl=US">View in Play Store</a> -->
+                                </div>
+                            </div>
+                            <p>Otlet is a personal project of mine that allows the user to track books, log sessions, and chart custom metrics over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-4">
+                <div class="rounded portfolio-card shadow-lg bg-grey">
+                    <div class="portfolio-card-header d-flex flex-row justify-content-between px-4">
+                        <i id="tradeForwardBtn" class="bi bi-arrow-left-square portfolio-arrow my-auto"></i>
+                        <img id="tradeShots" src="./assets/projects/tradehaven1.png" alt="Otlet" height="97%">
+                        <i id="tradeBackBtn" class="bi bi-arrow-right-square portfolio-arrow my-auto"></i>
+                    </div>
+                    <div class="portfolio-card-footer bg-white p-4">
+                        <div class="d-flex justify-content-start flex-column">
+                            <div>
+                                <h3>Trade Haven</h3>
+                                <div class="d-flex justify-content-end flex-row my-1">
+                                    <a class="mx-5" href="https://github.com/jackheinemann/otlet">View Github</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.heinemann.otlet&hl=en_US&gl=US">View in App Store</a>
+                                </div>
+                            </div>
+                            <p>Trade Haven is a stock market education app I helped to complete and publish for a client, as well as doing continual maintenance when required.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-4">
+                <div class="rounded portfolio-card shadow-lg bg-grey">
+                    <div class="portfolio-card-header d-flex flex-row justify-content-between px-4">
+                        <i id="kicksForwardBtn" class="bi bi-arrow-left-square portfolio-arrow my-auto"></i>
+                        <img id="kicksShots" src="./assets/projects/kicks1.png" alt="Otlet" height="97%">
+                        <i id="kicksBackBtn" class="bi bi-arrow-right-square portfolio-arrow my-auto"></i>
+                    </div>
+                    <div class="portfolio-card-footer bg-white p-4">
+                        <div class="d-flex justify-content-start flex-column">
+                            <div>
+                                <h3>KicksRUs</h3>
+                                
+                            </div>
+                            <p>KicksRUs is an internal app I built for a client to help martial arts students in their training program track various exercises and activities throughout a months long training program. This data is then used to generate student improvement reports.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-4">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="divider-gold mt-3"></div>
+
+     <!-- contact bar -->
+     <div class="container-fluid bg-blue white text-center pt-2 pb-2" id="contact">
+        <h3>Where To Find Me</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Email</h4>
+            <a class="contact-info" href="mailto: jack@oenoke.com">jack@oenoke.com</a>
+          </div>
+          <div class="col-sm-4">
+            <h4>Phone</h4>
+            <p>+1 (203) 505 9855</p>
+          </div>
+          <div class="col-sm-4">
+            <h4>GitHub</h4>
+            <a class="contact-info" href="https://github.com/jackheinemann">jackheinemann</a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        var otletIndex = 1; // 4 max
+        var tradeIndex = 1; // 2 max
+        var kicksIndex = 1; // 3 max
+
+        const otletForwardBtn = document.getElementById("otletForwardBtn");
+        const otletBackBtn = document.getElementById("otletBackBtn");
+
+        const tradeForwardBtn = document.getElementById("tradeForwardBtn");
+        const tradeBackBtn = document.getElementById("tradeBackBtn");
+
+        const kicksForwardBtn = document.getElementById("kicksForwardBtn");
+        const kicksBackBtn = document.getElementById("kicksBackBtn");
+
+        otletForwardBtn.addEventListener('click', event => {
+            if (otletIndex == 4) otletIndex = 1;
+            else otletIndex ++;
+
+            document.getElementById("otletShots").src = `./assets/projects/otlet${otletIndex}.png`
+        });
+
+        otletBackBtn.addEventListener('click', event => {
+            if (otletIndex == 1) otletIndex = 4;
+            else otletIndex --;
+
+            document.getElementById("otletShots").src = `./assets/projects/otlet${otletIndex}.png`
+        });
+
+        tradeForwardBtn.addEventListener('click', event => {
+            if (tradeIndex == 2) tradeIndex = 1;
+            else tradeIndex ++;
+
+            document.getElementById("tradeShots").src = `./assets/projects/tradehaven${tradeIndex}.png`
+        });
+
+        tradeBackBtn.addEventListener('click', event => {
+            if (tradeIndex == 1) tradeIndex = 2;
+            else tradeIndex --;
+
+            document.getElementById("tradeShots").src = `./assets/projects/tradehaven${tradeIndex}.png`
+        });
+
+        kicksForwardBtn.addEventListener('click', event => {
+            if (kicksIndex == 3) kicksIndex = 1;
+            else kicksIndex ++;
+
+            document.getElementById("kicksShots").src = `./assets/projects/kicks${kicksIndex}.png`
+        });
+
+        kicksBackBtn.addEventListener('click', event => {
+            if (kicksIndex == 1) kicksIndex = 3;
+            else kicksIndex --;
+
+            document.getElementById("kicksShots").src = `./assets/projects/kicks${kicksIndex}.png`
+        });
+
+    </script>
+  </body>
+
+  <style>
+      .logo-dim {
+        width: 40px;
+      }
+
+      .bg-blue {
+          background-color: #12263A;
+      }
+
+      .profile-img {
+          width: 20vw;
+          height: 20vw;
+          object-fit: cover;
+      }
+
+      body {
+        background-image: url("./assets/papyrus.png");
+      }
+
+      .divider-gold {
+        border-top: 0.5px #F9A03F;
+        border-style: solid;
+        color: #F9A03F;
+      }
+
+      .red {
+         color: #AD343E;
+      }
+
+      .bg-red {
+          background-color: #AD343E;
+      }
+
+      .white {
+          color: white;
+      }
+
+      .bg-white {
+          background-color:gainsboro;
+      }
+
+      .bg-grey {
+          background-color: lightslategrey;
+      }
+
+      .portfolio-card {
+        height: 700px;
+      }
+
+      .portfolio-card-header {
+          height: 490px;
+      }
+
+      .portfolio-card-footer {
+          height: 210px;
+      }
+
+      .portfolio-arrow {
+          font-size: 2rem;
+          color: white;
+          cursor: pointer;
+      }
+
+      .contact-info:link {
+          color: white;
+      }
+
+      .contact-info:hover {
+        color: white;
+      }
+
+      .contact-info:active {
+          color: white
+      }
+
+      .contact-info:visited {
+          color: white;
+      }
+      
+  </style>
+</html>
